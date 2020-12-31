@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+.contact {
+  color: white;
+  letter-spacing: 2px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+/* body */
+.contain {
+  max-width: 100%;
+  margin: 0;
+  padding: 50px 0;
+  background-color: white;
+  height: 100%;
+  background-color: rgb(0, 195, 255);
+}
+
+.start {
+  margin: auto;
+  height: 100%;
+  max-width: 400px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start div {
+  text-align: center;
+}
+.start div img.logo {
+  padding: 20px;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.start div .name {
+  font-family: "Heebo", sans-serif;
+  font-size: 1.5rem;
+  width: 60%;
+  margin: auto;
+  padding: 3px 7px;
+  margin: 10px;
+  height: 3rem;
+  border-radius: 0;
+  border: none;
+  text-align: center;
+}
+.start div .name:active,
+.start div .name:focus {
+  outline: none;
+}
+button {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 2rem;
+  width: 60%;
+  margin: 10px;
+  margin: auto;
+  height: 3rem;
+  border-radius: 0;
+  background-color: white;
+  border: 1px solid white;
+  transition: all 0.3s ease-out;
+}
+button:hover {
+  transform: scale(1.05);
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  transition: all 0.3s ease-out;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+
+/* Start Quiz */
+.test {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+.test .inner-contain {
+  margin: auto;
+  max-width: calc(1920px * 0.5);
+  height: 100%;
+}
+.test .inner-contain .player_name {
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+}
+.test .inner-contain .question {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  height: 30%;
+  background-color: white;
+}
+.test .inner-contain .question .que {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+.test .inner-contain .question p {
+  font-family: "Questrial", sans-serif;
+  font-size: 2rem;
+  width: 100%;
+  margin: 1rem;
+  height: fit-content;
+}
+.test .inner-contain .ans {
+  padding: 10px;
+  height: 40%;
+  display: grid;
+  gap: 10px;
+}
+.test .inner-contain .ans .opt {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.459);
+  color: white;
+}
+.test .inner-contain .but {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 30%;
+}
+.test .inner-contain .but button {
+  font-size: 1.5vw;
+  margin: 10px;
+  display: block;
+  width: 20%;
+}
+
+/* show result */
+.result {
+  color: white;
+  font-size: 2rem;
+  margin: auto;
+  height: 100%;
+  max-width: 400px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result .inner-contain {
+  text-align: center;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.541);
+  padding: 20px;
+}
+.result .inner-contain .player_name,
+.result .inner-contain .score {
+  color: rgba(0, 0, 0, 0.671);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 769px) {
+  .contact {
+    letter-spacing: 1px;
+    font-size: 0.5rem;
+    padding: 2px;
+  }
+
+  /* start game */
+  .test .inner-contain .question .que {
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .test .inner-contain .question p {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  .test .inner-contain .ans .opt {
+    font-family: "Questrial", sans-serif;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  .test .inner-contain .but button {
+    font-size: 1rem;
+    margin: 10px;
+    width: 30%;
+  }
+  
+  /* show result */
+  .result {
+    font-size: 1rem;
+  }
+  .result .inner-contain .player_name,
+  .result .inner-contain .score {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aft {
+  background-color: white;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  transform: scale(0);
+  border-radius: 100%;
+  transition: transform 1s, border-radius 1s;
+}
+.aft.nxt {
+  display: block;
+  animation: spread_anim 2s linear;
+  transform: scale(1);
+  border-radius: 0;
+}
+@keyframes spread_anim {
+  0% {
+    opacity: 0;
+  }
+  15%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.aft.nxtt {
+  display: block;
+  animation: slide_anim 1s linear;
+  transform: scale(1);
+  border-radius: 0;
+}
+@keyframes slide_anim {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  15%,
+  75% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
