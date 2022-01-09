@@ -1,10 +1,14 @@
-# Simple Quiz Game
+<div align="center">
+  <img alt="Logo" src="https://github.com/Heyeso/Simple-Quiz/blob/master/images/quizLogoicon.png?raw=true" width="100" />
+</div>
+<h2 align="center">
+ Simple Quiz Game
+</h2>
 
-This project is a simple attempt to replicate a full working quiz game website with a "fun" theme.
+ Simple Quiz Game is a simple attempt to replicate a full working quiz game website with a "fun" theme.
 
 ## `Link`
 
-https://myportfolio-e35e6.web.app/subWebsites/simpleQuizGame/index.html
 
 ### `Library`
 
@@ -21,4 +25,8 @@ Desktop
 (Default) Google Chrome\
 Microsoft Edge\
 Opera
+
+### License
+
+MIT License.
 
